@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.teste.pedro</groupId>
-	<artifactId>ProjetoSpringFlyway</artifactId>
+	<artifactId>SpringFlywayProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ProjetoSpringFlyway</name>
-	<description>Projeto Spring com Flyway</description>
+	<name>SpringFlywayProject</name>
+	<description>Project Spring\Flyway</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
