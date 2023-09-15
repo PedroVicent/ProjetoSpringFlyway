@@ -16,8 +16,8 @@ public class RenterService {
         this.repository = repository;
     }
 
-    public void saveRenter(RenterDTO renterDTO) {
-        repository.save(new Renter(renterDTO));
+    public Renter saveRenter(RenterDTO renterDTO) {
+        return repository.save(new Renter(renterDTO));
     }
 
     public Renter findRenterById(Long id) {
