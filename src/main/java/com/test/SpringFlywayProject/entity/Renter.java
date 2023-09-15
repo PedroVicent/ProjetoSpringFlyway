@@ -1,5 +1,6 @@
 package com.test.SpringFlywayProject.entity;
 
+import com.test.SpringFlywayProject.entity.dto.RenterDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,16 +19,16 @@ public class Renter {
 
     private Long document;
 
-    private Car carRented;
 
-    private LocalDate expirationDate;
-
-    public Renter(Long id, String name, Long document, Car carRented, LocalDate expirationDate) {
+    public Renter(Long id, String name, Long document) {
         this.id = id;
         this.name = name;
         this.document = document;
-        this.carRented = carRented;
-        this.expirationDate = expirationDate;
+    }
+
+    public Renter(RenterDTO renter) {
+        this.document = renter.document();
+        this.name = renter.name();
     }
 
     public Long getId() {
@@ -54,19 +55,4 @@ public class Renter {
         this.document = document;
     }
 
-    public Car getCarRented() {
-        return carRented;
-    }
-
-    public void setCarRented(Car carRented) {
-        this.carRented = carRented;
-    }
-
-    public LocalDate getExpirationDate() {
-        return expirationDate;
-    }
-
-    public void setExpirationDate(LocalDate expirationDate) {
-        this.expirationDate = expirationDate;
-    }
 }
