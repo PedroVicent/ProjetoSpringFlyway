@@ -12,8 +12,12 @@ public class Contract {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @JoinColumn(name = "car_id")
+    @ManyToOne
     private Car car;
 
+    @JoinColumn(name = "renter_id")
+    @ManyToOne
     private Renter renter;
 
     private LocalDate expirationDate;
