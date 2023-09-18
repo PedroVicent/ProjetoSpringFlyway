@@ -3,14 +3,12 @@ package com.test.SpringFlywayProject.controller;
 import com.test.SpringFlywayProject.entity.Renter;
 import com.test.SpringFlywayProject.entity.dto.RenterDTO;
 import com.test.SpringFlywayProject.service.RenterService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController("/renter")
+@RestController
+@RequestMapping("/renter")
 public class RenterController {
 
     private RenterService service;

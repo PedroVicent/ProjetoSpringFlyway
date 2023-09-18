@@ -15,10 +15,10 @@ public class Renter {
 
     private String name;
 
-    private Long document;
+    private String document;
 
 
-    public Renter(Long id, String name, Long document) {
+    public Renter(Long id, String name, String document) {
         this.id = id;
         this.name = name;
         this.document = document;
@@ -45,11 +45,11 @@ public class Renter {
         this.name = name;
     }
 
-    public Long getDocument() {
+    public String getDocument() {
         return document;
     }
 
-    public void setDocument(Long document) {
+    public void setDocument(String document) {
         this.document = document;
     }
 
