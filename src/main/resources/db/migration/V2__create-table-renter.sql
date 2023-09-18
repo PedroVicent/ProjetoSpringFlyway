@@ -1,5 +1,5 @@
 CREATE TABLE RENTER(
     id SERIAL PRIMARY KEY,
     name VARCHAR NOT NULL,
-    document INTEGER NOT NULL
+    document VARCHAR NOT NULL
 );
