@@ -17,6 +17,7 @@ public class Renter {
 
     private String document;
 
+    public Renter(){}
 
     public Renter(Long id, String name, String document) {
         this.id = id;
